@@ -1,17 +1,21 @@
 <!doctype html>
-<html>
-<head>
+<html><!-- InstanceBegin template="/Templates/moban.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
 		<!--声明当前的页面的编码集-->
 		<meta charset="utf-8"/>
-<title>常见问题_微嵌</title>
-<meta name="Description" content="公司主营业务软件无线电,认知无线电,通用软件无线电平台,USRP 设计、销售。">
-<meta name="Keywords" content="USRP,GNURadio,软件无线电,SDR,Openbts,射频子板,收发子板">
-<meta name="renderer" content="webkit">
+		<!-- InstanceBeginEditable name="head" -->
+		<title>常见问题_微嵌</title>
+		<meta name="Description" content="公司主营业务软件无线电,认知无线电,通用软件无线电平台,USRP 设计、销售。">
+		<meta name="Keywords" content="USRP,GNURadio,软件无线电,SDR,Openbts,射频子板,收发子板">
+		<!-- InstanceEndEditable -->
+		<meta name="renderer" content="webkit">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
         <link rel="stylesheet" type="text/css" href="../../../css/general.css"/>
         <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" href="../../../css/css.css"/>
-</head>
+		<!-- InstanceBeginEditable name="link" -->
+		<link rel="stylesheet" type="text/css" href="../../../css/css.css"/>
+		<!-- InstanceEndEditable -->
+	</head>
 <body>
 	<div class="show">
     	<!--head start-->
@@ -19,7 +23,7 @@
             <div class="top-wraper">
 	       		<div class="top">
 	        		<span class="top-name">微嵌电子技术（北京）有限责任公司</span>
-	        		<!--<span class="top-tel">中文版&nbsp;&nbsp;|&nbsp;&nbsp;<a href="../../../en/index.html">English</a></span>-->
+	        		<!--<span class="top-tel">中文版&nbsp;&nbsp;|&nbsp;&nbsp;<a href="../en/index.html">English</a></span>-->
 				</div>
         	</div>
             <div class="head-bottom">
@@ -47,6 +51,7 @@
 		</div>
         <!--head end-->
         
+        <!-- InstanceBeginEditable name="content" -->
         <div class="faq_mingxi">
         <div class="middle">
         	<div class="content box_shadow">
@@ -167,12 +172,12 @@
 				<p class="faq_mingxi">GPIF（General Purpose Interface）的构建使得 FX2 能够简单地同多种不同的设备接口。本质上，它是带有一组由可配置状态机控制的通用控制信号的双向数据总线。GPIF 可被配置成总线主设备（bus master）或受设备驱动的总线从设备（bus slave）。GPIF 作为总线主设备的情况，有六个状态可被用来描述一个特定任务的时序（waveforms）。依据通用控制电平的大小（the values of the generic control lines）通过决策点（decision points）决定其状态的转换。</p>
 				<p class="faq_mingxi">下面是其四种可供选择的描述特定任务的总线时序：</p>
 				<p class="faq_mingxi">
-				<ul>
+					<ul>
 						<li>只写（Single Write）: 该总线时序完成将一个单独数据从 USB 写到设备的过程（所有的过程都是以 USB 作为中心）</li>
 						<li>只读（Single Read）: 该总线时序完成将一个单独数据从设备读到 USB 的过程 </li>
 						<li>先入先出读（FIFO Write）: 该总线时序基于预先的配置参数完成对一组数据的写的过程。在这些数据的传输过程中可能会受到接收设备的阻塞。</li>
 						<li>先入先出写（FIFO Read）: 该总线时序完成从设备对一组数据的读的过程，它可被用来读取 ADC 的数据流到宿主计算机。 下面是一个简化的 GPIF FIFO Read 时序图。 </li>
-				</ul>
+					</ul>
 					<p class="faq_mingxi">GPIF 时序例图 (源于 Kalen Thesis 提供)</p>
 					<p class="faq_mingxi"><img src="../../../images/faq/gpifexampleow7.jpg" alt="" width="790" height="330" /></p>
 					<p class="faq_mingxi">GPIF 具有六个控制信号输入 RDY5:0 和六个控制信号输出 CTL5:0。这足以使其总线控制时序呈现基于标准的多样性及专属性。如上图所示，位于 state 1 的决策点（decision points）将保持其原有状态（stalled state）直到 RDY0（在此其诠释 FIFO 空标志）将其释放。与此同时 GPIF 状态机便转入 state 2 并且将此时呈现在数据总线的数据捕获。FX2 通过内部端口（internal endpoints）以 EP0、EP1、EP2、EP4、EP6 及 EP8 形式构建 USB 的端口（endpoints）, 它可以通过多种方式被配置来适应应用程序对缓存的需求。EP0 通常被配置成一个 64 byte CONTROL endpoint；EP1 仅可能被配置成一个 BULK 或 INTERRUPT 类型 (它也是 64 bytes)。其余的可被配置成最大容积 4K 的双倍缓存、三倍或四倍缓存。正是通过这种方式，数据得以能够持续的流入或流出宿主设备，在恰当的时机便能够提供恰当的流控制。</p>
@@ -347,7 +352,10 @@
 			</div>
 		</div>
         </div>
-		<div class="foot-wrapper">
+		<!-- InstanceEndEditable --> 
+        
+        
+        <div class="foot-wrapper">
             <div class="footer">
                 <div class="bottombar">
                     <div class="bottombar-list1">
@@ -377,7 +385,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="beian">©2009 MicroEmbedded    备案信息：京ICP备09099155号    京公网安备：110108904713</div>
+                <div class="beian">©2009 MicroEmbedded    备案信息：京ICP备15049573号    京公网安备：110108904713</div>
             </div>
         </div>
         <!--foot end-->
@@ -391,7 +399,7 @@
         <p class="youhui_a_title">微嵌 - 产品活动信息</p>
         <hr />
         <p>为大学生毕业设计，推出USRP1套件，现特价优惠！</p>
-        <a href="../../youhui.html">详&nbsp;&nbsp;&nbsp;&nbsp;情</a>
+        <a href="../youhui.html">详&nbsp;&nbsp;&nbsp;&nbsp;情</a>
     </div>
     -->
 </div>
@@ -417,7 +425,10 @@ s0.parentNode.insertBefore(s1,s0);
             left:0
         });  
     });
-</script> <script type="text/javascript">
+</script>
+<!-- InstanceBeginEditable name="js" -->
+		<!-- InstanceEndEditable -->
+<script type="text/javascript">
 (function(){
     var bp = document.createElement('script');
     var curProtocol = window.location.protocol.split(':')[0];
@@ -432,4 +443,4 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 </body>
-</html>
+<!-- InstanceEnd --></html>
