@@ -65,10 +65,16 @@ a:hover{color:#006598;text-decoration:underline;}
 .menus .menu li{float:left;}
 .menus .menu li .menu_son{display:block;width:136px;height:40px;line-height:38px;color:#fff;font-size:12px;text-align:center;
     background:url(../images/menu_bg.jpg) no-repeat;box-shadow:0 1px 4px #000;}
-.menus .menu li .menu_6{width:144px;}
+.menus .menu li .menu_6{width:136px;}
 .menus .menu li .menu_son:hover, .menus .menu #menu_2:hover #menu_2_a{background:url(../images/menu_bg.jpg) no-repeat 0 -40px;box-shadow:0 1px 4px #780000;text-decoration:none;}
 .menus .menu li .menu_6:hover{background-repeat:repeat-x;}
-	
+
+.menu_son_4{width:30px;height:40px;background:green;font-size:20px;margin-bottom: 0px;}
+.list{width:136px;border:1px solid #333;background:#CCC;display: none; margin-top:0px;}
+
+.menus .menu li .menu_son_4{display:block;width:136px;height:40px;line-height:38px;color:#fff;font-size:12px;text-align:center;
+    background:url(../images/menu_bg.jpg) no-repeat;box-shadow:0 1px 4px #000;}
+.menus .menu li .menu_son_4:hover, .menus .menu #menu_2:hover #menu_2_a{background:url(../images/menu_bg.jpg) no-repeat 0 -40px;box-shadow:0 1px 4px #780000;text-decoration:none;}
 	
 /*foot start*/
 .foot-wrapper{width:100%;background-color:#f1f1f1;border-top:1px solid #dcdcdc;padding-top:30px;position:absolute;bottom:0;}
