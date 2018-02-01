@@ -47,8 +47,8 @@
 				<li><a class="menu_son" href="../software/software.html">SDR 软件</a></li>
 				<li><a class="menu_son_4" href="../support/faq.html">文档资料</a>
                 	<div  class="list">
-	         		 <a class="menu_son_4" href="html/support/faq.html">技术支持</a>
-	         		 <a class="menu_son_4" href="doc">技术文档</a>
+	         		 <a class="menu_son_14" href="../support/faq.html">技术支持</a>
+	         		 <a class="menu_son_14" href="/doc">技术文档</a>
 	        		</div>
                 </li>
 				<li><a class="menu_son" href="../applications/applications.html">应用案例</a></li>
@@ -194,13 +194,14 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-		$(function () {
-			//显示隐藏
-			$(".menu_son_4").hover(function (){
-					$(".list").toggle();
-			});
+	$(function () {
+	//显示隐藏
+		$(".menu_son_4").hover(function (){
+			//$(".list").toggle();
+			$(".list").show();
+			$(".list").delay(2000).hide(0);
 		});
+	});
 </script>
-
 </body>
 <!-- InstanceEnd --></html>
